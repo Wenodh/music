@@ -5,6 +5,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 const config = {
     images: {
+        domains: ['c.saavncdn.com'],
         remotePatterns: [
             {
                 protocol: 'https',
