@@ -216,7 +216,7 @@ export default function MusicPage() {
     }
     return (
         <div className=" md:block">
-            <Menu />
+            {/* <Menu /> */}
             <div className="border-t">
                 <div className="bg-background">
                     <div className="grid grid-cols-1 lg:grid-cols-5">
