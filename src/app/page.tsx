@@ -50,7 +50,7 @@ export default function MusicPage() {
     const main_api = 'https://saavn.dev/api';
 
     const Loffi_API = `${main_api}/search/songs?query=loffi&page=1&limit=30`;
-    const Trending_API = `${main_api}/search/songs?query=trending&page=1&limit=30`;
+    const Trending_API = `${main_api}/search/songs?query=telugu&page=1&limit=30`;
 
     const SEARCH_API = `${main_api}/search/songs?query=${
         value || 'india'
@@ -62,8 +62,6 @@ export default function MusicPage() {
             queryKey: ['treading-song'],
             queryFn: () => fetch(Trending_API).then((res) => res.json()),
         });
-
-    console.log('trending_APISongs-', trending_APISongs);
 
     // Loffi_API api
     const { isLoading: isLoffiSongsLoading, data: loffiSongs } =
@@ -112,7 +110,7 @@ export default function MusicPage() {
                 <Menu />
                 <div className="border-t">
                     <div className="bg-background">
-                        <div className="grid lg:grid-cols-5">
+                        <div className="grid grid-cols-1 lg:grid-cols-5">
                             <Sidebar
                                 playlists={playlists}
                                 className="hidden lg:block"
