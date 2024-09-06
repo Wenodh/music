@@ -199,7 +199,7 @@ export default function MusicPage() {
                                         </div>
                                         <TabsContent
                                             value="music"
-                                            className="border-none p-0 outline-none"
+                                            className="border-none p-0 outline-none pb-32"
                                         >
                                             <div className="flex items-center justify-between">
                                                 <div className="space-y-1">
