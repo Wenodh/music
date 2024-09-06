@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/ModeToggle"
 import {
   Menubar,
   MenubarCheckboxItem,
@@ -195,6 +196,7 @@ export function Menu() {
           <MenubarItem inset>Add Account...</MenubarItem>
         </MenubarContent>
       </MenubarMenu>
+      <ModeToggle />
     </Menubar>
   )
 }
